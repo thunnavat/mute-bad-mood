@@ -10,10 +10,10 @@ const ButtonLink = ({ text, href }: IButtonLinkProps) => {
   return (
     <Link
       href={href}
-      className="flex mx-auto justify-center items-center"
+      className="mx-auto flex items-center justify-center"
     >
-      <button className="bg-gray-800 w-full max-w-60 absolute bottom-10 rounded-[48px]">
-        <p className="text-white p-3 uppercase">{text}</p>
+      <button className="absolute bottom-10 w-full max-w-60 rounded-[48px] bg-gray-800">
+        <p className="p-3 uppercase text-white">{text}</p>
       </button>
     </Link>
   )

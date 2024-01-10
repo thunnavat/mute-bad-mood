@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image"
 import ButtonLink from "./components/ButtonLink"
 
 const Home = () => {
@@ -13,7 +13,10 @@ const Home = () => {
           priority
         />
       </div>
-      <ButtonLink text="start" href="/passport" />
+      <ButtonLink
+        text="start"
+        href="/passport"
+      />
     </main>
   )
 }
