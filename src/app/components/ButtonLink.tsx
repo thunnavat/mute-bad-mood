@@ -4,15 +4,16 @@ import React from "react"
 interface IButtonLinkProps {
   text: string
   href: string
+  className?: string
 }
 
-const ButtonLink = ({ text, href }: IButtonLinkProps) => {
+const ButtonLink = ({ text, href, className }: IButtonLinkProps) => {
   return (
     <Link
       href={href}
-      className="mx-auto flex items-center justify-center"
+      className={` ${className}`}
     >
-      <button className="absolute bottom-10 w-full max-w-60 rounded-[48px] bg-gray-800">
+      <button className="w-full rounded-[48px] bg-gray-800">
         <p className="p-3 uppercase text-white">{text}</p>
       </button>
     </Link>

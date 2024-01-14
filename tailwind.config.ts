@@ -12,6 +12,18 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      },
+      colors: {
+        blue: {
+          980: "#3284c2",
+        }
+      },
+      fontFamily: {
+        sen: ['__Sen_5b9104', '__Sen_Fallback_5b9104']
+      },
+      screens: {
+        "se": "326px",
+        "ip": "376px"
       }
     }
   },

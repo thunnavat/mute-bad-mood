@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
-import { Kanit } from "next/font/google"
+import { Sen } from "next/font/google"
 import "./globals.css"
+import { AntdRegistry } from '@ant-design/nextjs-registry'
 
-const kanit = Kanit({ subsets: ["latin"], weight: ["400"] })
+const sen = Sen({ subsets: ["latin"], weight: ["400"] })
 
 export const metadata: Metadata = {
   title: "MUTE MOOD",
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={kanit.className}>{children}</body>
+      <body className={sen.className}>
+        <AntdRegistry>{children}</AntdRegistry>
+      </body>
     </html>
   )
 }
