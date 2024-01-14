@@ -25,7 +25,7 @@ const config: Config = {
         "se": "326px",
         "ip": "376px"
       }
-    }
+    },
   },
   plugins: []
 }
