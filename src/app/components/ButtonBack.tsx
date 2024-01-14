@@ -10,7 +10,7 @@ const ButtonBack = ({ href }: IButtonLinkProps) => {
   return (
     <Link
       href={href}
-      className="flex items-center mx-5 my-5"
+      className="flex items-center mx-5 mt-5"
     >
       <button className="h-12 w-12 rounded-full bg-[#99c2eb] flex items-center justify-center">
       <Image

@@ -24,7 +24,7 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
             <ButtonBack 
             href="/god"/>
             <div className="flex flex-col h-screen w-screen items-center">
-                <div className='m-5'>
+                <div className='sm:mb-5 max-sm:my-5'>
                     <Image
                     src={img}
                     alt="god"
@@ -32,10 +32,10 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
                     height={120}
                     />
                 </div>
-                <div className="flex justify-center items-center max-w-md w-10/12 bg-white rounded-[50px] border-[7px] border-solid border-black shadow-[5px_3px_0px_#000000]">
+                <div className="flex justify-center items-center max-sm:max-w-md max-sm:w-10/12 sm:max-w-xl sm:w-10/12 bg-white rounded-[50px] border-[7px] border-solid border-black shadow-[5px_3px_0px_#000000]">
                     <h1 className="text-2xl font-semibold capitalize p-2">{ god_title }</h1>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-10 w-10/12 max-w-md bg-white rounded-[50px] border-[7px] border-solid border-black shadow-[5px_3px_0px_#000000]">
+                <div className="flex flex-col justify-center items-center mt-10 max-sm:max-w-md max-sm:w-10/12 sm:max-w-xl sm:w-10/12 bg-white rounded-[50px] border-[7px] border-solid border-black shadow-[5px_3px_0px_#000000]">
                     <h2 className="text-2xl font-semibold pt-5">ประวัติ</h2>
                     <p className="text-justify mx-5 mt-5 mb-10 tracking-wide">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum iusto odio autem, veniam facilis optio aperiam corporis accusamus porro explicabo sit impedit commodi qui repellendus, tenetur nobis voluptate sunt. Delectus?

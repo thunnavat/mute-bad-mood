@@ -14,7 +14,7 @@ const Map = () => {
     return (
         <main className="h-screen w-screen flex flex-col">
             <ButtonBack 
-                href="/"/>
+                href="/passport"/>
             <div className="sm:hidden h-screen relative flex items-center justify-end ml-5">
                 <div className="relative flex">
                     <div>
@@ -31,7 +31,7 @@ const Map = () => {
                             <label className="cursor-pointer">
                                 <div className=" bg-white p-2">
                                     <input type="radio" className="peer sr-only" name="map" value="location1" onChange={e=>setLocation(e.target.value)}/>
-                                    <div className="opacity-50 peer-checked:opacity-100 -rotate-6">
+                                    <div className="opacity-50 peer-checked:opacity-100 -rotate-3">
                                         <Image
                                         src="/san-jao-1.png"
                                         alt="san-jao-1"
@@ -110,7 +110,7 @@ const Map = () => {
                                 <label className="cursor-pointer">
                                     <div className=" bg-white p-2">
                                         <input type="radio" className="peer sr-only" name="map" value="location1" onChange={e=>setLocation(e.target.value)}/>
-                                        <div className="opacity-50 peer-checked:opacity-100 -rotate-6">
+                                        <div className="opacity-50 peer-checked:opacity-100 -rotate-3">
                                             <Image
                                             src="/san-jao-1.png"
                                             alt="san-jao-1"
@@ -140,7 +140,7 @@ const Map = () => {
                     </div>
                 </div>
             </div>
-            <div className="mb-10">
+            <div className="z-10 mb-10">
                 <ButtonLink
                     text="next"
                     href={url}

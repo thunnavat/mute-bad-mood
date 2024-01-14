@@ -55,7 +55,7 @@ const PassportPage = () => {
           href="/map"
           text="next"
           className={`${
-            name ? "fixed bottom-4 w-full max-w-[400px]" : "hidden"
+            name ? "fixed bottom-10 w-full max-w-[400px]" : "hidden"
           }`}
         />
       </div>
