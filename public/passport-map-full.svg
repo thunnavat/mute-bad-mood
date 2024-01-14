@@ -1,8 +1,0 @@
-<svg width="1300" height="1000" viewBox="0 0 1300 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="1000" width="1000" height="1300" rx="40" transform="rotate(-90 0 1000)" fill="#286893"/>
-<rect x="18" y="982" width="964" height="1264" rx="40" transform="rotate(-90 18 982)" fill="#3284C2"/>
-<rect x="50" y="950" width="900" height="1200" rx="40" transform="rotate(-90 50 950)" fill="white"/>
-<path d="M1134.51 732L1134.51 386C1134.51 330.772 1089.74 286 1034.51 286L806.001 286" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20 15"/>
-<path d="M238.5 826L427.75 826C451.912 826 471.5 806.412 471.5 782.25V782.25C471.5 758.087 491.088 738.5 515.25 738.5L631 738.5C658.614 738.5 681 760.886 681 788.5L681 832.5C681 860.114 703.386 882.5 731 882.5L887.501 882.5L887.499 882.5L1094 882.5" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20 15"/>
-<path d="M730.5 162.5L181 162.5C153.386 162.5 131 184.886 131 212.5V272.5C131 300.114 153.386 322.5 181 322.5H250C277.614 322.5 300 344.886 300 372.5V455C300 482.614 277.614 505 250 505H232.5C204.886 505 182.5 527.386 182.5 555V740.5" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20 15"/>
-</svg>

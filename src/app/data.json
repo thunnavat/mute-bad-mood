@@ -1,9 +1,0 @@
-{
-    "location": ["ศาลเจ้าพ่อต้นไทร", "ศาลเจ้าเล่าปิงเถ้ากง", "ศาลเจ้าแม่ทับทิม"],
-    "locationdetail": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Esse dicta fugit consequatur ullam maiores culpa fugiat aspernatur assumenda, eum architecto eligendi possimus est modi quia quas perspiciatis nisi.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Esse dicta fugit consequatur ullam maiores culpa fugiat aspernatur assumenda, eum architecto eligendi possimus est modi quia quas perspiciatis nisi.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Esse dicta fugit consequatur ullam maiores culpa fugiat aspernatur assumenda, eum architecto eligendi possimus est modi quia quas perspiciatis nisi."],
-    "god": ["เทพเจ้ากวนอู", "ปีนเถ้ากง", "เจ้าแม่ทับทิม"],
-    "goddetail": ["เทพเจ้ากวนอู", "ปีนเถ้ากง", "เจ้าแม่ทับทิม"],
-    "siamsiedetail_1": ["เทพเจ้ากวนอู", "ปีนเถ้ากง", "เจ้าแม่ทับทิม"],
-    "siamsiedetail_2": ["เทพเจ้ากวนอู", "ปีนเถ้ากง", "เจ้าแม่ทับทิม"],
-    "siamsiedetail_3": ["เทพเจ้ากวนอู", "ปีนเถ้ากง", "เจ้าแม่ทับทิม"]
-}
