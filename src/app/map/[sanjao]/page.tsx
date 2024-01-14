@@ -33,7 +33,7 @@ const Sanjao = async ({ params }: { params: { sanjao: string } }) => {
             <ButtonBack 
             href="/map"/>
             <div className="flex flex-col h-screen w-screen items-center justify-start">
-                <div className="sm:mb-5 max-sm:my-5 ">
+                <div className="sm:mb-5 max-sm:my-5">
                     <Image
                     src={img}
                     alt="san-jao"
