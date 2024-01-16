@@ -4,14 +4,13 @@ import { promises as fs } from 'fs';
 const SiamSieDetail = async ({ params }: { params: { sanjao: string, siamsiedetail: number } }) => {
     const file = await fs.readFile(process.cwd() + '/src/app/data.json', 'utf8');
     const data = JSON.parse(file);
-    const Location: string[] = data.location
     let location: string = ""
     if (params.sanjao === "location1") {
-        location = Location[0]
+        location = data.location[0]
     } else if (params.sanjao === "location2") {
-        location = Location[1]
+        location = data.location[1]
     } else if (params.sanjao === "location3") {
-        location = Location[2]
+        location = data.location[2]
     }
     return (
         <main className="w-screen h-screen flex flex-col">
