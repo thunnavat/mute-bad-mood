@@ -19,3 +19,23 @@
 body {
   background-color: #f3e4c8;
 }
+
+#animation img {
+  display: none;
+}
+#animation img:first-child {
+  display: block;
+}
+
+@media (min-height: 431px) {
+  #logo {
+    width: 200px;
+    margin-bottom: 0px;
+  }
+  #animation {
+    display: block;
+  }
+  .cloud {
+    display: block;
+  }
+}
