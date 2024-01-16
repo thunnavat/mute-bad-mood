@@ -19,7 +19,11 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sen: ['__Sen_5b9104', '__Sen_Fallback_5b9104']
+        sen: ['__Sen_5b9104', '__Sen_Fallback_5b9104'],
+        sriracha: ['__Sriracha_2565c5', '__Sriracha_Fallback_2565c5'],
+        chakrapetch: ['__Chakra_Petch_58c1e9', '__Chakra_Petch_Fallback_58c1e9'],
+        sarabun: ['__Sarabun_eeb345', '__Sarabun_Fallback_eeb345'],
+        niramit: ['__Niramit_f76263', '__Niramit_Fallback_f76263'],
       },
       screens: {
         "se": "326px",
