@@ -1,21 +1,61 @@
 "use client"
 import Image from "next/image"
 import ButtonLink from "./components/ButtonLink"
+import { useEffect } from "react"
 
 const Home = () => {
-  if (typeof window !== "undefined") {
-    window.addEventListener("load", () => {
-      const frames = document.getElementById("animation")
-        ?.children as HTMLCollectionOf<HTMLElement>
-      const frameCount = frames?.length
-      let f = 0
-      setInterval(() => {
-        if (frames && frameCount) {
-          frames[f % frameCount].style.display = "none"
-          frames[++f % frameCount].style.display = "block"
-        }
-      }, 100)
-    })
+  useEffect(() => {
+    lightAnimation()
+    cloudAnimation()
+    logoAnimation()
+  }, [])
+
+  const lightAnimation = () => {
+    const frames = document.getElementById("animation")
+      ?.children as HTMLCollectionOf<HTMLElement>
+    const frameCount = frames?.length
+    let f = 0
+    setInterval(() => {
+      if (frames && frameCount) {
+        frames[f % frameCount].style.display = "none"
+        frames[++f % frameCount].style.display = "block"
+      }
+    }, 100)
+  }
+
+  const logoAnimation = () => {
+    const logo = document.getElementById("logo") as HTMLElement
+    let width = 0
+    const maxWidth = setInterval(() => {
+      logo.style.width = (width += 10) + "px"
+      if (screen.width <= 375) {
+        if (width === 130) clearInterval(maxWidth)
+      } else if (width === 200) {
+        clearInterval(maxWidth)
+      }
+    }, 20)
+  }
+
+  const cloudAnimation = () => {
+    const cloud1 = document.getElementById("cloud1") as HTMLElement
+    const cloud2 = document.getElementById("cloud2") as HTMLElement
+    const cloud3 = document.getElementById("cloud3") as HTMLElement
+    const start = Date.now()
+
+    const timer = setInterval(() => {
+      const timePassed = Date.now() - start
+
+      cloud1.style.left = -(timePassed / 5) + 500 + "px"
+      cloud2.style.left = timePassed / 4.9 + -190 + "px"
+      cloud3.style.left = -(timePassed / 6) + 450 + "px"
+
+      if (timePassed > 2500) {
+        clearInterval(timer)
+        cloud1.style.animation = "upToDown 2s infinite"
+        cloud2.style.animation = "upToDown 2s infinite"
+        cloud3.style.animation = "DownToUp 2s infinite"
+      }
+    }, 20)
   }
 
   const renderLightImage = () => {
@@ -42,7 +82,7 @@ const Home = () => {
       <div className="flex min-h-screen items-center justify-center">
         <div
           id="animation"
-          className="fixed top-6 hidden"
+          className="fixed top-6 sm:hidden"
         >
           {renderLightImage()}
         </div>
@@ -54,39 +94,42 @@ const Home = () => {
           height="0"
           sizes="100vw"
           priority
-          className="fixed z-10 mb-32 h-auto w-[100px]"
+          className="fixed z-10 h-auto w-[0px]"
         />
         <Image
+          id="cloud1"
           src="/Cloud.png"
           alt="Cloud1"
           width="0"
           height="0"
           sizes="100vw"
           priority
-          className="cloud fixed left-0 top-32 hidden h-auto w-[120px] ip:w-[180px]"
+          className="fixed left-[500px] top-32 h-auto w-[120px] ip:w-[190px] sm:hidden"
         />
         <Image
-          src="/Cloud.png"
+          id="cloud2"
+          src="/Cloud2.png"
           alt="Cloud2"
           width="0"
           height="0"
           sizes="100vw"
           priority
-          className="cloud fixed bottom-32 left-8 hidden h-auto w-[120px] ip:w-[180px]"
+          className="fixed -left-[180px]  bottom-80 h-auto w-[120px] ip:w-[180px] sm:hidden"
         />
         <Image
+          id="cloud3"
           src="/Cloud.png"
           alt="Cloud3"
           width="0"
           height="0"
           sizes="100vw"
           priority
-          className="cloud fixed -right-[70px] bottom-80 hidden h-auto w-[120px] scale-x-[-1] ip:w-[180px]"
+          className="fixed bottom-32 left-[450px] h-auto w-[120px] ip:w-[180px] sm:hidden"
         />
         <ButtonLink
           text="start"
           href="/passport"
-          className="fixed bottom-10 w-full max-w-[400px]"
+          className="fixed bottom-10"
         />
       </div>
     </main>

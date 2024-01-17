@@ -27,15 +27,34 @@ body {
   display: block;
 }
 
-@media (min-height: 431px) {
-  #logo {
-    width: 200px;
-    margin-bottom: 0px;
+#cloud1, #cloud2, #cloud3 {
+  position: fixed;
+}
+
+/* div {
+  animation: upToDown 2s infinite;
+} */
+
+@keyframes upToDown {
+  0% {
+    transform: translateY(0);
   }
-  #animation {
-    display: block;
+  50% {
+    transform: translateY(-2px);
   }
-  .cloud {
-    display: block;
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes DownToUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
