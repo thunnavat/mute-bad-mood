@@ -24,6 +24,7 @@ const config: Config = {
         chakrapetch: ['__Chakra_Petch_58c1e9', '__Chakra_Petch_Fallback_58c1e9'],
         sarabun: ['__Sarabun_eeb345', '__Sarabun_Fallback_eeb345'],
         niramit: ['__Niramit_f76263', '__Niramit_Fallback_f76263'],
+        anuphan: ['__Anuphan_561223', '__Anuphan_Fallback_561223'],
       },
       screens: {
         "se": "326px",

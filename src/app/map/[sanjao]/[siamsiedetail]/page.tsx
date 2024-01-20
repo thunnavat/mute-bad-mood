@@ -1,36 +1,76 @@
 import ButtonLink from "@/app/components/ButtonLink"
-import { promises as fs } from 'fs';
+import Image from "next/image"
 
-const SiamSieDetail = async ({ params }: { params: { sanjao: string, siamsiedetail: number } }) => {
-    const file = await fs.readFile(process.cwd() + '/src/app/data.json', 'utf8');
-    const data = JSON.parse(file);
-    let location: string = ""
-    if (params.sanjao === "location1") {
-        location = data.location[0]
-    } else if (params.sanjao === "location2") {
-        location = data.location[1]
-    } else if (params.sanjao === "location3") {
-        location = data.location[2]
-    }
-    return (
-        <main className="w-screen h-screen flex flex-col">
-            <p>{params.sanjao}-{params.siamsiedetail}</p>
-            <p>{location}</p>
-            <div className="flex flex-col h-screen w-screen items-center justify-center">
-                <div className="flex flex-col justify-center items-center mt-10 w-10/12 max-w-md min-h-80 bg-[#d83a40] rounded-s-sm border-[7px] border-solid border-[#a91319]">
-                    <h1 className="text-2xl font-semibold tracking-wide text-white">ใบที่ {params.siamsiedetail}</h1>
-                    <p className="text-center m-5 tracking-wide text-white">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum iusto odio autem, veniam facilis optio aperiam corporis accusamus porro explicabo sit impedit commodi qui repellendus, tenetur nobis voluptate sunt. Delectus?
-                    </p>
-                </div>
+const SiamSieDetail = ({
+  params
+}: {
+  params: { sanjao: string; siamsiedetail: number }
+}) => {
+  return (
+    <main className="flex h-screen w-screen flex-col items-center justify-center bg-[#99c2eb]">
+      <div className="flex h-screen w-screen max-w-[300px] flex-col items-center justify-center mx-5">
+        <div className="group h-[500px] w-[300px] max-w-[300px]">
+          <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div className="absolute inset-0 h-fit w-fit object-cover [backface-visibility:hidden]">
+              <Image
+                src={`/card/front/${params.siamsiedetail}.png`}
+                alt="san-jao"
+                width={300}
+                height={0}
+                className="h-auto"
+              />
             </div>
-            <div className="mb-10">
-                <ButtonLink
-                    text="next"
-                    href=""/>
+            <div className="absolute inset-0 h-fit w-fit object-cover [backface-visibility:hidden] [transform:rotateY(180deg)]">
+              <Image
+                src={`/card/back/${params.siamsiedetail}.png`}
+                alt="san-jao"
+                width={300}
+                height={0}
+                className="h-auto"
+              />
             </div>
-        </main>
-    )
+          </div>
+        </div>
+      </div>
+      <ButtonLink
+        text="next"
+        href="/god"
+        className="bottom-0"
+      />
+    </main>
+  )
 }
 
 export default SiamSieDetail
+
+{
+  /* <div className="flex h-screen w-screen flex-col items-center justify-center">
+        <div className="group h-[550px] w-[330px]">
+          <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div className="absolute inset-0 h-fit w-fit object-cover [backface-visibility:hidden]">
+              <Image
+                src="/card/B-1.png"
+                alt="san-jao"
+                width={330}
+                height={0}
+                className="h-auto"
+              />
+            </div>
+            <div className="absolute inset-0 h-fit w-fit object-cover [backface-visibility:hidden] [transform:rotateY(180deg)]">
+              <Image
+                src="/card/A-1.png"
+                alt="san-jao"
+                width={330}
+                height={0}
+                className="h-auto"
+              />
+            </div>
+            {/* <div className="absolute inset-0 p-5 z-10 h-full w-full bg-white border-[4px] border-solid border-black [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-y-scroll">
+              <CardDetail cardnumber={params.siamsiedetail}/>
+              <CardDetail cardnumber={params.siamsiedetail}/>
+              <CardDetail cardnumber={params.siamsiedetail}/>
+            </div>
+          </div>
+        </div>
+      </div> */
+}

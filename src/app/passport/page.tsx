@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import ButtonLink from "../components/ButtonLink"
 import { Input, Typography } from "antd"
+import SlideTransition from "../components/SlideTransition"
 
 const PassportPage = () => {
   const { Title } = Typography
@@ -14,6 +15,7 @@ const PassportPage = () => {
 
   return (
     <>
+      <SlideTransition>
       <div className="flex min-h-screen w-full justify-center">
         <div className="fixed -left-[100px] top-16 flex justify-center ip:top-64 sm:hidden sm:w-full">
           <Image
@@ -59,6 +61,7 @@ const PassportPage = () => {
           }`}
         />
       </div>
+      </SlideTransition>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import ButtonBack from "@/app/components/ButtonBack"
-import ButtonLink from "@/app/components/ButtonLink"
 import Image from "next/image"
 import { promises as fs } from "fs"
+import SlideTransition from "@/app/components/SlideTransition"
 
 const GodDetail = async ({ params }: { params: { id: string } }) => {
   const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8")
@@ -22,6 +22,7 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
   return (
     <main className="flex max-h-auto min-h-screen h-auto w-screen flex-col bg-[#99c2eb]">
       <ButtonBack href="/god" secondary={true}/>
+      <SlideTransition>
       <div className="flex max-h-auto h-auto w-screen flex-col items-center justify-start">
         <div className="max-sm:my-5 sm:mb-5">
           <Image
@@ -44,13 +45,7 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
           </p>
         </div>
       </div>
-      <div>
-        <ButtonLink
-          text="Play Again"
-          href="/passport"
-          className="bottom-0"
-        />
-      </div>
+      </SlideTransition>
     </main>
   )
 }
