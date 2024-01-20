@@ -19,7 +19,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sen: ['__Sen_5b9104', '__Sen_Fallback_5b9104'],
+        sen: ['__Sen_d06085', '__Sen_Fallback_d06085'],
         sriracha: ['__Sriracha_2565c5', '__Sriracha_Fallback_2565c5'],
         chakrapetch: ['__Chakra_Petch_58c1e9', '__Chakra_Petch_Fallback_58c1e9'],
         sarabun: ['__Sarabun_eeb345', '__Sarabun_Fallback_eeb345'],
@@ -34,3 +34,13 @@ const config: Config = {
   plugins: []
 }
 export default config
+
+
+//#F7DD79
+//#F6E6C8S
+//#F77B52
+//#3A90C4
+//#6AB3B6
+//#6A77BB
+//#F4ACC1
+//#469F7B

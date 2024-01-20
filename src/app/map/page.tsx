@@ -43,6 +43,7 @@ const Map = () => {
                       width={140}
                       height={140}
                     />
+                    <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าพ่อต้นไทร</h1>
                   </div>
                 </div>
               </label>
@@ -65,6 +66,7 @@ const Map = () => {
                         width={150}
                         height={150}
                       />
+                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าเล่าปิงเถ้ากง</h1>
                     </div>
                   </div>
                 </label>
@@ -86,6 +88,7 @@ const Map = () => {
                         width={150}
                         height={150}
                       />
+                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าแม่ทับทิม</h1>
                     </div>
                   </div>
                 </label>
@@ -94,8 +97,8 @@ const Map = () => {
           </div>
         </div>
       </div>
-
-      <div className="relative mx-5 mt-5 flex h-screen items-center justify-center max-sm:hidden">
+      
+      <div className="relative mx-5 mt-5 flex h-auto items-center justify-center max-sm:hidden">
         <div>
           <Image
             src="\passport-map-full.svg"
@@ -107,7 +110,7 @@ const Map = () => {
         </div>
         <div className="absolute flex h-full max-h-[540px] w-full max-w-[700px] flex-auto items-center justify-center p-10">
           <div className="flex h-full max-h-[460px] w-full max-w-[620px] flex-col">
-            <div className="flex h-full w-full items-start justify-center pt-3">
+            <div className="flex h-full w-full items-start justify-center">
               <label className="cursor-pointer">
                 <div className=" bg-white p-2">
                   <input
@@ -124,6 +127,7 @@ const Map = () => {
                       width={180}
                       height={180}
                     />
+                    <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าเล่าปิงเถ้ากง</h1>
                   </div>
                 </div>
               </label>
@@ -146,6 +150,7 @@ const Map = () => {
                         width={150}
                         height={150}
                       />
+                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าพ่อต้นไทร</h1>
                     </div>
                   </div>
                 </label>
@@ -167,6 +172,7 @@ const Map = () => {
                         width={180}
                         height={180}
                       />
+                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าแม่ทับทิม</h1>
                     </div>
                   </div>
                 </label>
