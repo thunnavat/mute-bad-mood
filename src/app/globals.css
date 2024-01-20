@@ -20,20 +20,16 @@ body {
   background-color: #f3e4c8;
 }
 
-#animation img {
+#animation1 img, #animation2 img {
   display: none;
 }
-#animation img:first-child {
+#animation1 img:first-child, #animation2 img:first-child {
   display: block;
 }
 
 #cloud1, #cloud2, #cloud3 {
   position: fixed;
 }
-
-/* div {
-  animation: upToDown 2s infinite;
-} */
 
 @keyframes upToDown {
   0% {
