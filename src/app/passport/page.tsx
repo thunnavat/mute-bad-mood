@@ -63,6 +63,7 @@ const PassportPage = () => {
               <DatePicker
                 className="!border-none !font-sen !text-base !font-semibold !tracking-wider"
                 onChange={handleDateChange}
+                onFocus={(e) => e.target.readOnly = true}
                 value={dateOfBirth}
               />
             </div>
