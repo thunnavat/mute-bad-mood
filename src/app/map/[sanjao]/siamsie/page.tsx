@@ -1,21 +1,20 @@
 "use client"
 import ButtonBack from "@/app/components/ButtonBack"
+import { Typography } from "antd"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import React, { useEffect } from "react"
 
-const SiamSie = ({
-  params
-}: {
-  params: { sanjao: string }
-}) => {
+const SiamSie = ({ params }: { params: { sanjao: string } }) => {
   const [isOpened, setIsOpened] = React.useState(false)
+  const { Title } = Typography
   let interval: NodeJS.Timeout
   const router = useRouter()
   useEffect(() => {
     clearInterval(interval)
     siamsieAnimation()
     cloudAnimation()
+    // textAnimation()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpened])
 
@@ -97,6 +96,17 @@ const SiamSie = ({
     cloud2.style.animation = "upToDown 2s infinite"
   }
 
+  // const textAnimation = () => {
+  //   const wish = document.getElementById("wish") as HTMLElement
+  //   let size = 0
+  //   const fonstSize = setInterval(() => {
+  //     wish.style.fontSize = (size += 1) + "px"
+  //     if (size === 20) {
+  //       clearInterval(fonstSize)
+  //     }
+  //   }, 100)
+  // }
+
   return (
     <main className="flex h-screen w-screen flex-col bg-custom-400">
       <ButtonBack
@@ -112,8 +122,14 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="-mb-14 h-auto w-[120px] ip:w-[180px] sm:hidden"
+          className="-mb-7 h-auto w-[120px] ip:w-[180px] sm:hidden"
         />
+        <Title
+          id="wish"
+          className="!mb-0 flex justify-center !font-anuphan !text-xl !font-normal"
+        >
+          โปรดตั้งจิตอธิษฐาน
+        </Title>
         <Image
           id="cloud2"
           src="/Cloud2.png"
@@ -122,7 +138,7 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="h-auto w-[120px] justify-self-end ip:w-[180px] sm:hidden"
+          className="-mt-7 h-auto w-[120px] justify-self-end ip:w-[180px] sm:hidden"
         />
       </div>
       <div

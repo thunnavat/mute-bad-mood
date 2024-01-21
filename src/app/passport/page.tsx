@@ -22,7 +22,7 @@ const PassportPage = () => {
   return (
     <>
       <SlideTransition>
-        <main className="bg-custom-200 h-full w-full overflow-x-hidden">
+        <main className="h-full w-full overflow-x-hidden bg-custom-200">
           <div className="relative h-screen sm:grid sm:grid-cols-1 sm:content-center">
             <div className="absolute -right-28 -top-32 z-10 max-se:-right-36 ip:top-4 sm:relative sm:left-0 sm:top-0 sm:flex sm:justify-center">
               <div className="relative">
@@ -57,7 +57,7 @@ const PassportPage = () => {
                   />
                 </div>
               </div>
-                          </div>
+            </div>
             <div className="relative h-full sm:h-auto">
               <Image
                 src="/Passsport-close.svg"
@@ -68,7 +68,7 @@ const PassportPage = () => {
                 priority
                 className="absolute -left-24 top-12 h-auto w-[350px] max-se:top-28 ip:top-44 sm:hidden"
               />
-<ButtonLink
+              <ButtonLink
                 href="/map"
                 text="next"
                 className={`${
