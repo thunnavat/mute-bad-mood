@@ -24,7 +24,7 @@ const SiamSieDetail = ({
   ]
   return (
     <main className="max-w-screen flex h-auto min-h-screen flex-col items-center justify-center bg-[#99c2eb]">
-      <div className="mx-5 flex h-auto w-[300px] flex-col items-center justify-center rounded-3xl bg-white p-2 shadow-2xl">
+      <div className="mx-5 mt-5 flex h-auto w-[300px] flex-col items-center justify-center rounded-3xl bg-white p-2 shadow-2xl">
         <div>
           <Image
             src={`/card/${params.siamsiedetail}.png`}

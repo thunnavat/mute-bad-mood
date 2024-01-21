@@ -14,7 +14,7 @@ const Map = () => {
   return (
     <main className="bg-custom-200 flex h-screen w-screen flex-col">
       <ButtonBack href="/passport" />
-      <div className="relative h-full ml-5 flex items-center justify-end bg-slate-300">
+      <div className="relative h-full ml-5 flex items-center justify-end sm:hidden">
         <div className="relative flex">
           <Image
             src="\passport-map.svg"
