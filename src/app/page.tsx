@@ -78,7 +78,7 @@ const Home = () => {
   }
 
   return (
-    <main className="h-full w-full bg-gradient-to-t from-[#f3e4c8] to-white">
+    <main className="h-full w-full bg-gradient-to-t from-[#f3e4c8] from-50% to-white">
       <div className="flex min-h-screen items-center justify-center sm:flex-col">
         <div
           id="animation1"

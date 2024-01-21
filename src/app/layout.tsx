@@ -8,7 +8,7 @@ export const sriracha = Sriracha({ subsets: ["thai"], weight: ["400"] })
 export const chakraPetch = Chakra_Petch({ subsets: ["thai"], weight: ["600"] })
 export const sarabun = Sarabun({ subsets: ["thai"], weight: ["200"] })
 export const niramit = Niramit({ subsets: ["thai"], weight: ["400", "500", "600", "700"] })
-export const anuphan = Anuphan({ subsets: ["thai"], weight: ["400", "500", "600", "700"] })
+export const anuphan = Anuphan({ subsets: ["thai"], weight: ["500"] })
 
 export const metadata: Metadata = {
   title: "MUTE MOOD",
