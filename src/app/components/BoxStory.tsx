@@ -8,7 +8,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
   if (name === "location1") {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
-        <h2 className="pt-3 font-anuphan text-2xl font-semibold">ประวัติ</h2>
+        <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
         <p className="mx-5 mt-3 text-justify font-anuphan text-base font-extralight tracking-wide indent-6">
           “ศาลเจ้าเล่าปุนเถ้ากง” ศาลเจ้าที่มีประวัติความเป็นมากว่าศตวรรษ
           เป็นศูนย์รวมความศรัทธาของชาวจีนมาตั้งแต่ยุคต้นกรุงรัตนโกสินทร์
@@ -33,7 +33,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
   } else if (name === "location2") {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
-        <h2 className="pt-3 font-anuphan text-2xl font-semibold">ประวัติ</h2>
+        <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
         <p className="mx-5 mt-3 text-justify indent-6 font-anuphan text-base font-extralight tracking-wide">
           ประวัติเล่าว่า ในสมัยก่อนเจ้าพ่อเป็นนักรบ
           ทำความดีไว้มากมายได้อัญเชิญมาจากประเทศจีนให้คนที่ทำธุรกิจการค้ามาไหว้ขอพรจะได้มีผลการค้าเจริญรุ่งเรืองเล่าขานกันต่อ
@@ -51,7 +51,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
   } else if (name === "location3") {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
-        <h2 className="pt-3 font-anuphan text-2xl font-semibold">ประวัติ</h2>
+        <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
         <p className="mx-5 mb-8 mt-3 text-justify indent-6 font-anuphan text-base font-extralight tracking-wide">
           ศาลเจ้าแม่ทับทิม ซึ่งชาวจีนเชื่อว่าเป็นเทพเจ้าแห่งท้องน้ำ
           ที่ชาวเรือจีนจากแดนไกลเคารพบูชามาตั้งแต่บรรพบุรุษ
