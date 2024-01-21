@@ -17,7 +17,13 @@
 }
 
 body {
-  background-color: #f3e4c8;
+  background-color: #ffffff;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #F6E6C8;
 }
 
 #animation1 img, #animation2 img {

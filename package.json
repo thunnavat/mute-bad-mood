@@ -15,10 +15,11 @@
     "@ant-design/icons": "^5.2.6",
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.12.8",
-    "file-saver": "^2.0.5",
     "dayjs": "^1.11.10",
+    "file-saver": "^2.0.5",
     "framer-motion": "^10.18.0",
     "next": "14.0.4",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18"
   },

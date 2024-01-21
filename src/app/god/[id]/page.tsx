@@ -23,7 +23,7 @@ const GodDetail = ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <main className="flex max-h-auto min-h-screen h-auto w-screen flex-col">
+    <main className="flex max-h-auto min-h-screen h-auto w-screen flex-col bg-custom-200">
       <ButtonBack href={`/map/${url}`}/>
       <SlideTransition>
       <div className="flex max-h-auto h-auto w-screen flex-col items-center justify-start">
