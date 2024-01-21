@@ -56,7 +56,7 @@ const SiamSieDetail = ({
       <div className="mt-5 flex flex-row space-x-2">
         <FacebookShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          quote={"next-share is a social share buttons plugin for React apps."}
+          quote={"MUTE MOOD Website for making wishes"}
           hashtag={"#mutemood"}
         >
           <FacebookIcon
@@ -67,7 +67,7 @@ const SiamSieDetail = ({
         <LineShareButton
           url={"https://mute-bad-mood.vercel.app/"}
           title={
-            "next-share is a social share buttons for your next React apps."
+            "MUTE MOOD Website for making wishes"
           }
         >
           <LineIcon
@@ -78,7 +78,7 @@ const SiamSieDetail = ({
         <TelegramShareButton
           url={"https://mute-bad-mood.vercel.app/"}
           title={
-            "next-share is a social share buttons for your next React apps."
+            "MUTE MOOD Website for making wishes"
           }
         >
           <TelegramIcon
@@ -89,7 +89,7 @@ const SiamSieDetail = ({
         <TwitterShareButton
           url={"https://mute-bad-mood.vercel.app/"}
           title={
-            "next-share is a social share buttons for your next React apps."
+            "MUTE MOOD Website for making wishes"
           }
         >
           <TwitterIcon
