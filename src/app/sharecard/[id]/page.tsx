@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: "Website for making wishes",
     images: [
       {
-        url: "card/sharecard/1.png",
+        url: "/MetaImage_2.png",
         width: 1200,
         height: 630,
         alt: "MUTE MOOD"

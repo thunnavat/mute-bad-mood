@@ -65,7 +65,7 @@ const SiamSieDetail = ({
           />
         </FacebookShareButton>
         <LineShareButton
-          url={"https://mute-bad-mood.vercel.app/"}
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
           title={
             "MUTE MOOD Website for making wishes"
           }
@@ -76,7 +76,7 @@ const SiamSieDetail = ({
           />
         </LineShareButton>
         <TelegramShareButton
-          url={"https://mute-bad-mood.vercel.app/"}
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
           title={
             "MUTE MOOD Website for making wishes"
           }
@@ -87,7 +87,7 @@ const SiamSieDetail = ({
           />
         </TelegramShareButton>
         <TwitterShareButton
-          url={"https://mute-bad-mood.vercel.app/"}
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
           title={
             "MUTE MOOD Website for making wishes"
           }
