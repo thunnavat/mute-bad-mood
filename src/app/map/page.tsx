@@ -13,8 +13,11 @@ const Map = () => {
   }
   return (
     <main className="bg-custom-200 flex h-screen w-screen flex-col">
-      <ButtonBack href="/passport" />
-      <div className="relative h-full ml-5 flex items-center justify-end sm:hidden">
+      <ButtonBack href="/passport" className="sm:absolute" />
+      <h1 className="flex justify-center pt-1 pb-2 font-anuphan sm:mt-10 sm:text-2xl max-sm:text-xl font-medium tracking-tighter underline text-balance text-center">
+        โปรดเลือกสาลเจ้าที่คุณต้องการ
+      </h1>
+      <div className="relative ml-5 flex h-full items-center justify-end sm:hidden">
         <div className="relative flex">
           <Image
             src="\passport-map.svg"
@@ -70,7 +73,7 @@ const Map = () => {
                         priority
                       />
                       <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
-                        ศาลเจ้าเล่าปิงเถ้ากง
+                        ศาลเจ้าเล่าปึงเถ่ากง
                       </h1>
                     </div>
                   </div>
@@ -134,7 +137,7 @@ const Map = () => {
                       height={180}
                     />
                     <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
-                      ศาลเจ้าเล่าปิงเถ้ากง
+                      ศาลเจ้าเล่าปึงเถ่ากง
                     </h1>
                   </div>
                 </div>

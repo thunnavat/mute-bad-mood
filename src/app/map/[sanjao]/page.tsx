@@ -12,15 +12,15 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
   if (params.sanjao === "location1") {
     location = "ศาลเจ้าพ่อต้นไทร"
     img = "/san-jao-1.png"
-    url = "/god/location1"
+    url = "/map/location1/siamsie"
   } else if (params.sanjao === "location2") {
-    location = "ศาลเจ้าเล่าปิงเถ้ากง"
+    location = "ศาลเจ้าเล่าปึงเถ่ากง"
     img = "/san-jao-2.png"
-    url = "/god/location2"
+    url = "/map/location2/siamsie"
   } else if (params.sanjao === "location3") {
     location = "ศาลเจ้าแม่ทับทิม"
     img = "/san-jao-3.png"
-    url = "/god/location3"
+    url = "/map/location3/siamsie"
   }
 
   return (
@@ -38,7 +38,7 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
             />
           </div>
           <div className="flex items-center justify-center rounded-[50px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
-            <h1 className="p-2 font-chakrapetch text-3xl font-semibold capitalize tracking-tighter">
+            <h1 className="p-2 font-anuphan text-3xl font-semibold capitalize tracking-normal">
               {location}
             </h1>
           </div>
