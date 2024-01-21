@@ -67,7 +67,7 @@ const SiamSieDetail = ({
         </FacebookShareButton>
         <FacebookMessengerShareButton
           url={"https://mute-bad-mood.vercel.app/"}
-          appId={""}
+          appId={"1057487598819570"}
         >
           <FacebookMessengerIcon
             size={iconsize}
