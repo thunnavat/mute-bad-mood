@@ -68,7 +68,6 @@ const PassportPage = () => {
                 priority
                 className="absolute -left-24 top-12 h-auto w-[350px] max-se:top-28 ip:top-44 sm:hidden"
               />
-
               <ButtonLink
                 href="/map"
                 text="next"
