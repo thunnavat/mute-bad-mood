@@ -13,10 +13,23 @@ const Map = () => {
   }
   return (
     <main className="bg-custom-200 flex h-screen w-screen flex-col">
-      <ButtonBack href="/passport" className="sm:absolute" />
-      <h1 className="flex justify-center pt-1 pb-2 font-anuphan sm:mt-10 sm:text-2xl max-sm:text-xl font-medium tracking-tighter underline text-balance text-center">
+      <ButtonBack
+        href="/passport"
+        className="sm:absolute"
+      />
+      {/* <h1 className="flex justify-center pt-1 pb-2 font-anuphan sm:mt-10 sm:text-2xl max-sm:text-xl font-medium tracking-tighter underline text-balance text-center">
         โปรดเลือกสาลเจ้าที่คุณต้องการ
-      </h1>
+      </h1> */}
+      <div className="flex justify-center mb-2 sm:mt-10">
+        <Image
+          src="/please-select.png"
+          alt="please-select"
+          width={350}
+          height={0}
+          priority
+          className="h-auto"
+        />
+      </div>
       <div className="relative ml-5 flex h-full items-center justify-end sm:hidden">
         <div className="relative flex">
           <Image
