@@ -19,7 +19,7 @@ const SiamSieDetail = async ({
             alt="card"
             width={300}
             height={0}
-            loading="lazy"
+            priority
             className="h-auto"
           />
         </div>

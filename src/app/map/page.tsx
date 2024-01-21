@@ -42,6 +42,7 @@ const Map = () => {
                       alt="san-jao-1"
                       width={140}
                       height={140}
+                      priority
                     />
                     <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าพ่อต้นไทร</h1>
                   </div>
@@ -65,6 +66,7 @@ const Map = () => {
                         alt="san-jao-2"
                         width={150}
                         height={150}
+                        priority
                       />
                       <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าเล่าปิงเถ้ากง</h1>
                     </div>
@@ -87,6 +89,7 @@ const Map = () => {
                         alt="san-jao-3"
                         width={150}
                         height={150}
+                        priority
                       />
                       <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าแม่ทับทิม</h1>
                     </div>

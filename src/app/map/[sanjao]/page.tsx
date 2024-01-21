@@ -36,6 +36,7 @@ const Sanjao = async ({ params }: { params: { sanjao: string } }) => {
               alt="san-jao"
               height={160}
               width={160}
+              priority
             />
           </div>
           <div className="flex items-center justify-center rounded-[50px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
