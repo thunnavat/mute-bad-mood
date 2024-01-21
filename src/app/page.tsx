@@ -11,7 +11,7 @@ const Home = () => {
   }, [])
 
   const lightAnimation = () => {
-    const frames = document.getElementById("animation")
+    const frames = document.getElementById("animation1")
       ?.children as HTMLCollectionOf<HTMLElement>
     const frameCount = frames?.length
     let f = 0
@@ -78,10 +78,10 @@ const Home = () => {
   }
 
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full bg-gradient-to-t from-[#f3e4c8] to-white">
       <div className="flex min-h-screen items-center justify-center sm:flex-col">
         <div
-          id="animation"
+          id="animation1"
           className="fixed top-6 sm:hidden"
         >
           {renderLightImage()}
@@ -104,7 +104,7 @@ const Home = () => {
           height="0"
           sizes="100vw"
           priority
-          className="fixed left-[500px] top-32 h-auto w-[120px] ip:w-[190px] sm:hidden"
+          className="fixed left-[500px] top-32 h-auto w-[120px] ip:w-[180px] sm:hidden"
         />
         <Image
           id="cloud2"

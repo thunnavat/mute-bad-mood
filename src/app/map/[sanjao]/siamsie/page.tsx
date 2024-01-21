@@ -15,8 +15,8 @@ const SiamSie = ({
   useEffect(() => {
     clearInterval(interval)
     siamsieAnimation()
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    cloudAnimation()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpened])
 
   const renderSiamSie = () => {
@@ -31,7 +31,7 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="h-auto w-[300px] "
+          className="h-auto w-[200px] ip:w-[250px]"
         />
       )
     }
@@ -50,7 +50,7 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="h-auto w-[300px] "
+          className="h-auto w-[200px] ip:w-[250px]"
         />
       )
     }
@@ -61,7 +61,7 @@ const SiamSie = ({
   const siamsieAnimation = () => {
     const framesClose = document.getElementById("animation1")
       ?.children as HTMLCollectionOf<HTMLElement>
-      const framesOpen = document.getElementById("animation2")
+    const framesOpen = document.getElementById("animation2")
       ?.children as HTMLCollectionOf<HTMLElement>
     const frameCloseCount = 16
     const frameOpenCount = 31
@@ -70,14 +70,11 @@ const SiamSie = ({
       if (framesClose && frameCloseCount && !isOpened) {
         framesClose[f % frameCloseCount].style.display = "none"
         framesClose[++f % frameCloseCount].style.display = "block"
-        console.log(f % frameCloseCount)
       } else if (framesOpen && frameOpenCount && isOpened) {
         framesOpen[f % frameOpenCount].style.display = "none"
         framesOpen[++f % frameOpenCount].style.display = "block"
-        console.log(f % frameOpenCount)
         setTimeout(() => {
           clearInterval(interval)
-          console.log("clear")
           if (i === 0) {
             const number = getRandomInt(12)
             router.push(`/map/location1/${number}`)
@@ -92,15 +89,47 @@ const SiamSie = ({
     return Math.floor(Math.random() * (max - 1 + 1) + 1)
   }
 
+  const cloudAnimation = () => {
+    const cloud1 = document.getElementById("cloud1") as HTMLElement
+    const cloud2 = document.getElementById("cloud2") as HTMLElement
+
+    cloud1.style.animation = "upToDown 2s infinite"
+    cloud2.style.animation = "upToDown 2s infinite"
+  }
+
   return (
     <main className="flex h-screen w-screen flex-col bg-[#99c2eb]">
       <ButtonBack
         href={`/god/${params.sanjao}`}
         secondary={true}
       />
+      <div className="grid grid-cols-1">
+        <Image
+          id="cloud1"
+          src="/Cloud.png"
+          alt="Cloud1"
+          width="0"
+          height="0"
+          sizes="100vw"
+          priority
+          className="-mb-14 h-auto w-[120px] ip:w-[180px] sm:hidden"
+        />
+        <Image
+          id="cloud2"
+          src="/Cloud2.png"
+          alt="Cloud2"
+          width="0"
+          height="0"
+          sizes="100vw"
+          priority
+          className="h-auto w-[120px] justify-self-end ip:w-[180px] sm:hidden"
+        />
+      </div>
       <div
         id="animation1"
-        className={`fixed -bottom-20 flex w-full justify-center ${isOpened ? "hidden" : ""}`}
+        className={`fixed -bottom-20 flex w-full justify-center ${
+          isOpened ? "hidden" : ""
+        }`}
         onClick={() => {
           setIsOpened(!isOpened)
           clearInterval(interval)
@@ -110,7 +139,9 @@ const SiamSie = ({
       </div>
       <div
         id="animation2"
-        className={`fixed -bottom-20 flex w-full justify-center ${isOpened ? "" : "hidden"}`}
+        className={`fixed -bottom-20 flex w-full justify-center ${
+          isOpened ? "" : "hidden"
+        }`}
       >
         {renderSiamSieOpen()}
       </div>

@@ -27,10 +27,6 @@ body {
   display: block;
 }
 
-#cloud1, #cloud2, #cloud3 {
-  position: fixed;
-}
-
 @keyframes upToDown {
   0% {
     transform: translateY(0);
@@ -53,4 +49,20 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+.ant-picker-focused.ant-picker {
+  border-color: white !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.ant-picker .ant-picker-input >input {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em;
+}
+
+.ant-picker{
+  background: transparent !important;
 }
