@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div display="flex" flex-direction="column" align="center">
+    <h1>MU-TE(BAD)MOOD</h1>
+    <p>Website for making wishes</p>
+    <a href="https://mute-bad-mood.vercel.app/">
+        <img src="public\Logo.png" width="300" alt="Mute Mood Logo">
+    </a>
+</div>
 
 ## Getting Started
 

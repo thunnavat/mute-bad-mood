@@ -2,6 +2,18 @@
 import ButtonLink from "@/app/components/ButtonLink"
 import ButtonDownload from "@/app/components/ButtonDownload"
 import Image from "next/image"
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  FacebookMessengerShareButton,
+  FacebookMessengerIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  LineShareButton,
+  LineIcon
+} from "next-share"
 
 const SiamSieDetail = ({
   params
@@ -22,6 +34,7 @@ const SiamSieDetail = ({
     "คนโสด จะยังเป็นโสดอยู่ ควรรักตัวเองให้มากๆก่อนจะเปิดใจรับใครเข้ามา เป็นตัวของตัวเองไม่ต้องฝืนปรับเปลี่ยน อะไรเพื่อคนอื่นแล้วคู่ในอนาคตจะเข้ามาหาเอง",
     "คนโสดคุณมีคนแอบปลื้มแต่เขาไม่กล้า เข้าหาลองใส่ใจคนรอบตัวให้มากกว่านี้ คนนั้นอาจจะเป็นคนที่คุณสนิทมากกว่าที่คิด"
   ]
+  const iconsize: number = 48
   return (
     <main className="max-w-screen flex h-auto min-h-screen flex-col items-center justify-center bg-[#99c2eb]">
       <div className="mx-5 mt-5 flex h-auto w-[300px] flex-col items-center justify-center rounded-3xl bg-white p-2 shadow-2xl">
@@ -40,6 +53,60 @@ const SiamSieDetail = ({
             {carddetail[params.siamsiedetail - 1]}
           </p>
         </div>
+      </div>
+      <div className="mt-5 flex flex-row space-x-2">
+        <FacebookShareButton
+          url={"https://mute-bad-mood.vercel.app/"}
+          quote={"next-share is a social share buttons plugin for React apps."}
+          hashtag={"mutemood"}
+        >
+          <FacebookIcon
+            size={iconsize}
+            round
+          />
+        </FacebookShareButton>
+        <FacebookMessengerShareButton
+          url={"https://mute-bad-mood.vercel.app/"}
+          appId={""}
+        >
+          <FacebookMessengerIcon
+            size={iconsize}
+            round
+          />
+        </FacebookMessengerShareButton>
+        <LineShareButton
+          url={"https://mute-bad-mood.vercel.app/"}
+          title={
+            "next-share is a social share buttons for your next React apps."
+          }
+        >
+          <LineIcon
+            size={iconsize}
+            round
+          />
+        </LineShareButton>
+        <TelegramShareButton
+          url={"https://mute-bad-mood.vercel.app/"}
+          title={
+            "next-share is a social share buttons for your next React apps."
+          }
+        >
+          <TelegramIcon
+            size={iconsize}
+            round
+          />
+        </TelegramShareButton>
+        <TwitterShareButton
+          url={"https://mute-bad-mood.vercel.app/"}
+          title={
+            "next-share is a social share buttons for your next React apps."
+          }
+        >
+          <TwitterIcon
+            size={iconsize}
+            round
+          />
+        </TwitterShareButton>
       </div>
       <ButtonDownload
         cardNumber={params.siamsiedetail}
