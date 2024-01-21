@@ -110,7 +110,7 @@ const SiamSie = ({ params }: { params: { sanjao: string } }) => {
   return (
     <main className="flex h-screen w-screen flex-col bg-custom-400">
       <ButtonBack
-        href={`/god/${params.sanjao}`}
+        href={`/map/${params.sanjao}`}
         secondary={true}
       />
       <div className="grid grid-cols-1">
