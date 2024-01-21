@@ -1,26 +1,24 @@
+'use client'
 import ButtonBack from "@/app/components/ButtonBack"
 import ButtonLink from "@/app/components/ButtonLink"
 import BoxStory from "@/app/components/BoxStory"
 import Image from "next/image"
-import { promises as fs } from "fs"
 import SlideTransition from "@/app/components/SlideTransition"
 
-const Sanjao = async ({ params }: { params: { sanjao: string } }) => {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8")
-  const data = JSON.parse(file)
+const Sanjao = ({ params }: { params: { sanjao: string } }) => {
   let location: string = ""
   let img: string = ""
   let url: string = ""
   if (params.sanjao === "location1") {
-    location = data.location[0]
+    location = "ศาลเจ้าพ่อต้นไทร"
     img = "/san-jao-1.png"
     url = "/god/location1"
   } else if (params.sanjao === "location2") {
-    location = data.location[1]
+    location = "ศาลเจ้าเล่าปิงเถ้ากง"
     img = "/san-jao-2.png"
     url = "/god/location2"
   } else if (params.sanjao === "location3") {
-    location = data.location[2]
+    location = "ศาลเจ้าแม่ทับทิม"
     img = "/san-jao-3.png"
     url = "/god/location3"
   }
