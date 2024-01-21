@@ -27,7 +27,7 @@ const config: Config = {
         anuphan: ['var(--font-anuphan)'],
       },
       screens: {
-        "se": "326px",
+        "se": "321px",
         "ip": "376px"
       }
     },

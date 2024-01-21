@@ -66,3 +66,9 @@ body {
 .ant-picker{
   background: transparent !important;
 }
+
+@media (max-width: 321px) {
+  .ant-picker-dropdown {
+    inset: 0 !important;
+  }
+}
