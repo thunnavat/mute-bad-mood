@@ -5,12 +5,14 @@ import Image from "next/image"
 import {
   FacebookShareButton,
   FacebookIcon,
-  TelegramShareButton,
-  TelegramIcon,
+  VKShareButton,
+  VKIcon,
   TwitterShareButton,
   TwitterIcon,
   LineShareButton,
-  LineIcon
+  LineIcon,
+  WhatsappShareButton,
+  WhatsappIcon
 } from "next-share"
 
 const SiamSieDetail = ({
@@ -35,7 +37,7 @@ const SiamSieDetail = ({
   const iconsize: number = 48
   const baseURL: string = "https://mute-bad-mood.vercel.app/"
   return (
-    <main className="max-w-screen flex h-auto min-h-screen flex-col items-center justify-center bg-[#99c2eb]">
+    <main className="max-w-screen bg-custom-400 flex h-auto min-h-screen flex-col items-center justify-center">
       <div className="mx-5 mt-5 flex h-auto w-[300px] flex-col items-center justify-center rounded-3xl bg-white p-2 shadow-2xl">
         <div>
           <Image
@@ -66,37 +68,40 @@ const SiamSieDetail = ({
         </FacebookShareButton>
         <LineShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          title={
-            "MUTE MOOD Website for making wishes"
-          }
+          title={"MUTE MOOD Website for making wishes"}
         >
           <LineIcon
             size={iconsize}
             round
           />
         </LineShareButton>
-        <TelegramShareButton
-          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          title={
-            "MUTE MOOD Website for making wishes"
-          }
-        >
-          <TelegramIcon
-            size={iconsize}
-            round
-          />
-        </TelegramShareButton>
         <TwitterShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          title={
-            "MUTE MOOD Website for making wishes"
-          }
+          title={"MUTE MOOD Website for making wishes"}
         >
           <TwitterIcon
             size={iconsize}
             round
           />
         </TwitterShareButton>
+        <WhatsappShareButton
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
+          title={"MUTE MOOD Website for making wishes"}
+        >
+          <WhatsappIcon
+            size={iconsize}
+            round
+          />
+        </WhatsappShareButton>
+        <VKShareButton
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
+          title={"MUTE MOOD Website for making wishes"}
+        >
+          <VKIcon
+            size={iconsize}
+            round
+          />
+        </VKShareButton>
       </div>
       <ButtonDownload
         cardNumber={params.siamsiedetail}

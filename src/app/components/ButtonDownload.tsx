@@ -37,7 +37,7 @@ const ButtonDownload = ({
               height={20}
             />
             {/* <p className="p-1 font-sans text-sm font-bold capitalize text-white">
-              Download
+              Download bg-[#D83A40]
             </p> */}
           </div>
         </button>
