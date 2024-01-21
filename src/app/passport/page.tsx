@@ -54,7 +54,10 @@ const PassportPage = () => {
                 placeholder="Enter your name"
                 bordered={false}
                 onChange={handleNameChange}
+                onBlur={(e) => e.target.readOnly = true}
+                onFocus={(e) => e.target.readOnly = false}
                 className="!mb-3 !font-sen !text-base !font-semibold !tracking-wider"
+                
                 value={name}
               />
               <Title className="!mb-0 !pl-[11px] !font-sen !text-xl !font-extrabold uppercase !text-blue-980">
