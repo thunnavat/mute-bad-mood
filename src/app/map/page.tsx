@@ -12,19 +12,18 @@ const Map = () => {
     next_btn = true
   }
   return (
-    <main className="flex h-screen w-screen flex-col">
-      <ButtonBack href="/passport"/>
-      <div className="relative ml-5 mt-5 flex h-screen items-center justify-end sm:hidden">
+    <main className="bg-custom-200 flex h-screen w-screen flex-col">
+      <ButtonBack href="/passport" />
+      <div className="relative h-full ml-5 flex items-center justify-end bg-slate-300">
         <div className="relative flex">
-          <div>
-            <Image
-              src="\passport-map.svg"
-              alt="passport"
-              width={400}
-              height={400}
-              priority
-            />
-          </div>
+          <Image
+            src="\passport-map.svg"
+            alt="passport"
+            width={400}
+            height={0}
+            priority
+            className="h-auto"
+          />
           <div className="absolute flex h-full w-full flex-row items-center px-8 py-10">
             <div className="flex h-full w-full items-center">
               <label className="cursor-pointer">
@@ -44,7 +43,9 @@ const Map = () => {
                       height={140}
                       priority
                     />
-                    <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าพ่อต้นไทร</h1>
+                    <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                      ศาลเจ้าพ่อต้นไทร
+                    </h1>
                   </div>
                 </div>
               </label>
@@ -68,7 +69,9 @@ const Map = () => {
                         height={150}
                         priority
                       />
-                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าเล่าปิงเถ้ากง</h1>
+                      <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                        ศาลเจ้าเล่าปิงเถ้ากง
+                      </h1>
                     </div>
                   </div>
                 </label>
@@ -91,7 +94,9 @@ const Map = () => {
                         height={150}
                         priority
                       />
-                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าแม่ทับทิม</h1>
+                      <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                        ศาลเจ้าแม่ทับทิม
+                      </h1>
                     </div>
                   </div>
                 </label>
@@ -100,17 +105,15 @@ const Map = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="relative mx-5 flex h-auto items-center justify-center max-sm:hidden">
-        <div>
-          <Image
-            src="\passport-map-full.svg"
-            alt="passport"
-            width={700}
-            height={700}
-            priority
-          />
-        </div>
+        <Image
+          src="\passport-map-full.svg"
+          alt="passport"
+          width={700}
+          height={700}
+          priority
+        />
         <div className="absolute flex h-full max-h-[540px] w-full max-w-[700px] flex-auto items-center justify-center p-10">
           <div className="flex h-full max-h-[460px] w-full max-w-[620px] flex-col">
             <div className="flex h-full w-full items-start justify-center">
@@ -130,7 +133,9 @@ const Map = () => {
                       width={180}
                       height={180}
                     />
-                    <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าเล่าปิงเถ้ากง</h1>
+                    <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                      ศาลเจ้าเล่าปิงเถ้ากง
+                    </h1>
                   </div>
                 </div>
               </label>
@@ -153,7 +158,9 @@ const Map = () => {
                         width={150}
                         height={150}
                       />
-                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าพ่อต้นไทร</h1>
+                      <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                        ศาลเจ้าพ่อต้นไทร
+                      </h1>
                     </div>
                   </div>
                 </label>
@@ -175,7 +182,9 @@ const Map = () => {
                         width={180}
                         height={180}
                       />
-                      <h1 className="flex pt-1 font-chakrapetch font-semibold text-center tracking-tighter justify-center">ศาลเจ้าแม่ทับทิม</h1>
+                      <h1 className="flex justify-center pt-1 text-center font-chakrapetch font-semibold tracking-tighter">
+                        ศาลเจ้าแม่ทับทิม
+                      </h1>
                     </div>
                   </div>
                 </label>
@@ -189,7 +198,7 @@ const Map = () => {
           text="Next"
           href={url}
           disabled={next_btn}
-          className="bottom-10"
+          className="bottom-0"
         />
       </div>
     </main>

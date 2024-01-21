@@ -24,7 +24,7 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
   }
 
   return (
-    <main className="max-h-auto flex h-auto w-screen flex-col">
+    <main className="max-h-auto flex h-auto w-screen flex-col bg-custom-200">
       <ButtonBack href="/map" />
       <SlideTransition>
         <div className="max-h-auto flex h-auto w-screen flex-col items-center justify-start">

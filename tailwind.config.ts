@@ -16,6 +16,16 @@ const config: Config = {
       colors: {
         blue: {
           980: "#3284c2",
+        },
+        custom: {
+          100: "#F7DD79", //yellow
+          200: "#F6E6C8", //cream
+          300: "#F77B52", //orange
+          400: "#3A90C4", //blue
+          500: "#6AB3B6", //green-blue
+          600: "#6A77BB", //purple
+          700: "#F4ACC1", //pink
+          800: "#469F7B"  //green
         }
       },
       fontFamily: {

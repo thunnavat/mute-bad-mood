@@ -22,7 +22,7 @@ const PassportPage = () => {
   return (
     <>
       <SlideTransition>
-        <div className="flex min-h-screen w-full justify-center">
+        <div className="flex min-h-screen w-full justify-center bg-custom-200">
           <div className="fixed -left-[100px] top-16 flex justify-center ip:top-64 sm:hidden sm:w-full">
             <Image
               src="/Passsport-close.svg"
