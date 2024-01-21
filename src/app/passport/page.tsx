@@ -55,6 +55,7 @@ const PassportPage = () => {
                 bordered={false}
                 onChange={handleNameChange}
                 className="!mb-3 !font-sen !text-base !font-semibold !tracking-wider"
+                
                 value={name}
               />
               <Title className="!mb-0 !pl-[11px] !font-sen !text-xl !font-extrabold uppercase !text-blue-980">
@@ -63,6 +64,7 @@ const PassportPage = () => {
               <DatePicker
                 className="!border-none !font-sen !text-base !font-semibold !tracking-wider"
                 onChange={handleDateChange}
+                onFocus={(e) => e.target.readOnly = true}
                 value={dateOfBirth}
               />
             </div>
