@@ -98,7 +98,7 @@ const Map = () => {
         </div>
       </div>
       
-      <div className="relative mx-5 mt-5 flex h-auto items-center justify-center max-sm:hidden">
+      <div className="relative mx-5 flex h-auto items-center justify-center max-sm:hidden">
         <div>
           <Image
             src="\passport-map-full.svg"

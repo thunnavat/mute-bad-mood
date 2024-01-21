@@ -11,17 +11,19 @@ interface IButtonLinkProps {
 
 const ButtonLink = ({ text, href, disabled, className }: IButtonLinkProps) => {
   return (
-    <Link
-      href={href}
-      className={`flex items-center justify-center w-screen ${className}`}
-    >
-      <button
-        className="my-5 w-10/12 max-w-[400px] rounded-[48px] bg-gray-800 disabled:opacity-0"
-        disabled={disabled}
+    <div className={`flex w-screen items-center justify-center ${className}`}>
+      <Link
+        href={href}
+        className="flex my-5 w-10/12 max-w-[400px]"
       >
-        <p className="p-4 text-xl font-bold uppercase text-white">{text}</p>
-      </button>
-    </Link>
+        <button
+          className="w-full rounded-[48px] bg-gray-800 disabled:opacity-0"
+          disabled={disabled}
+        >
+          <p className="p-4 text-xl font-bold uppercase text-white">{text}</p>
+        </button>
+      </Link>
+    </div>
   )
 }
 

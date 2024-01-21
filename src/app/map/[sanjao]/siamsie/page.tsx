@@ -4,7 +4,11 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import React, { useEffect } from "react"
 
-const SiamSie = () => {
+const SiamSie = ({
+  params
+}: {
+  params: { sanjao: string }
+}) => {
   const [isOpened, setIsOpened] = React.useState(false)
   let interval: NodeJS.Timeout
   const router = useRouter()
@@ -91,7 +95,7 @@ const SiamSie = () => {
   return (
     <main className="flex h-screen w-screen flex-col bg-[#99c2eb]">
       <ButtonBack
-        href="/map"
+        href={`/god/${params.sanjao}`}
         secondary={true}
       />
       <div

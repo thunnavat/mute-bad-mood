@@ -1,4 +1,5 @@
 import ButtonBack from "@/app/components/ButtonBack"
+import ButtonLink from "@/app/components/ButtonLink"  
 import Image from "next/image"
 import { promises as fs } from "fs"
 import SlideTransition from "@/app/components/SlideTransition"
@@ -8,20 +9,24 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
   const data = JSON.parse(file)
   let god_title: string = ""
   let img: string = ""
-  if (params.id === "1") {
+  let url: string = ""
+  if (params.id === "location1") {
     god_title = data.god[0]
     img = "/god-1.png"
-  } else if (params.id === "2") {
+    url = "location1"
+  } else if (params.id === "location2") {
     god_title = data.god[1]
     img = "/god-2.png"
-  } else if (params.id === "3") {
+    url = "location2"
+  } else if (params.id === "location3") {
     god_title = data.god[2]
     img = "/god-3.png"
+    url = "location3"
   }
 
   return (
-    <main className="flex max-h-auto min-h-screen h-auto w-screen flex-col bg-[#99c2eb]">
-      <ButtonBack href="/god" secondary={true}/>
+    <main className="flex max-h-auto min-h-screen h-auto w-screen flex-col">
+      <ButtonBack href={`/map/${url}`}/>
       <SlideTransition>
       <div className="flex max-h-auto h-auto w-screen flex-col items-center justify-start">
         <div className="max-sm:my-5 sm:mb-5">
@@ -44,6 +49,11 @@ const GodDetail = async ({ params }: { params: { id: string } }) => {
             voluptate sunt. Delectus?
           </p>
         </div>
+        <ButtonLink
+          text="Next"
+          href={`/map/${url}/siamsie`}
+          className=""
+        />
       </div>
       </SlideTransition>
     </main>
