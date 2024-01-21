@@ -20,7 +20,7 @@ const ButtonLink = ({ text, href, disabled, className }: IButtonLinkProps) => {
           className="w-full rounded-[48px] bg-gray-800 disabled:opacity-0"
           disabled={disabled}
         >
-          <p className="p-4 text-xl font-bold uppercase text-white">{text}</p>
+          <p className="p-4 text-xl font-sen font-bold uppercase text-white">{text}</p>
         </button>
       </Link>
     </div>
