@@ -31,7 +31,7 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="h-auto w-[200px] ip:w-[250px]"
+          className="h-auto w-[180px] ip:w-[220px]"
         />
       )
     }
@@ -50,7 +50,7 @@ const SiamSie = ({
           height="0"
           sizes="100vw"
           priority
-          className="h-auto w-[200px] ip:w-[250px]"
+          className="h-auto w-[180px] ip:w-[220px]"
         />
       )
     }
