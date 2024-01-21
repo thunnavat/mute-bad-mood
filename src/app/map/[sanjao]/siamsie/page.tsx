@@ -98,7 +98,7 @@ const SiamSie = ({
   }
 
   return (
-    <main className="flex h-screen w-screen flex-col bg-[#99c2eb]">
+    <main className="flex h-screen w-screen flex-col bg-custom-400">
       <ButtonBack
         href={`/god/${params.sanjao}`}
         secondary={true}

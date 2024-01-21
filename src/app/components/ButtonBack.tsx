@@ -15,7 +15,7 @@ const ButtonBack = ({ href, className, secondary }: IButtonLinkProps) => {
         href={href}
         className={`mx-5 my-5 flex items-center ${className}`}
       >
-        <button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F6E6C8]">
+        <button className="flex h-12 w-12 items-center justify-center rounded-full bg-custom-200">
           <Image
             src="/chevron-left-secondary.svg"
             alt="chevron_left"
@@ -32,7 +32,7 @@ const ButtonBack = ({ href, className, secondary }: IButtonLinkProps) => {
         href={href}
         className={`mx-5 my-5 flex items-center ${className}`}
       >
-        <button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#6AB3B6]">
+        <button className="flex h-12 w-12 items-center justify-center rounded-full bg-custom-500">
           <Image
             src="/chevron-left-primary.svg"
             alt="chevron_left"
