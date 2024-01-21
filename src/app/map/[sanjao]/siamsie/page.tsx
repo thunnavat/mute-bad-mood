@@ -77,7 +77,7 @@ const SiamSie = ({
           clearInterval(interval)
           if (i === 0) {
             const number = getRandomInt(12)
-            router.push(`/map/location1/${number}`)
+            router.push(`/map/${params.sanjao}/${number}`)
             i++
           }
         }, 2900)

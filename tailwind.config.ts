@@ -19,12 +19,12 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sen: ['__Sen_d06085', '__Sen_Fallback_d06085'],
-        sriracha: ['__Sriracha_2565c5', '__Sriracha_Fallback_2565c5'],
-        chakrapetch: ['__Chakra_Petch_58c1e9', '__Chakra_Petch_Fallback_58c1e9'],
-        sarabun: ['__Sarabun_eeb345', '__Sarabun_Fallback_eeb345'],
-        niramit: ['__Niramit_f76263', '__Niramit_Fallback_f76263'],
-        anuphan: ['__Anuphan_7a7d59'],
+        sen: ['var(--font-sen)'],
+        sriracha: ['var(--font-sriracha)'],
+        chakrapetch: ['var(--font-chakrapetch)'],
+        sarabun: ['var(--font-sarabun)'],
+        niramit: ['var(--font-niramit)'],
+        anuphan: ['var(--font-anuphan)'],
       },
       screens: {
         "se": "326px",

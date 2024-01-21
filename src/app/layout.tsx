@@ -3,12 +3,12 @@ import { Sen, Sriracha, Sarabun, Chakra_Petch, Niramit, Anuphan } from "next/fon
 import "./globals.css"
 import { AntdRegistry } from "@ant-design/nextjs-registry"
 
-export const sen = Sen({ subsets: ["latin"], weight: ["700"] })
-export const sriracha = Sriracha({ subsets: ["thai"], weight: ["400"] })
-export const chakraPetch = Chakra_Petch({ subsets: ["thai"], weight: ["600"] })
-export const sarabun = Sarabun({ subsets: ["thai"], weight: ["200"] })
-export const niramit = Niramit({ subsets: ["thai"], weight: ["400", "500", "600", "700"] })
-export const anuphan = Anuphan({ subsets: ["thai"], weight: ["500"] })
+const sen = Sen({ subsets: ["latin"], weight: ["700"], variable: '--font-sen'})
+const sriracha = Sriracha({ subsets: ["thai"], weight: ["400"], variable: '--font-sriracha' })
+const chakraPetch = Chakra_Petch({ subsets: ["thai"], weight: ["600"], variable: '--font-chakrapetch' })
+const sarabun = Sarabun({ subsets: ["thai"], weight: ["200"], variable: '--font-sarabun' })
+const niramit = Niramit({ subsets: ["thai"], weight: ["400", "500", "600", "700"], variable: '--font-niramit' })
+const anuphan = Anuphan({ subsets: ["thai"], weight: ["500"], variable: '--font-anuphan' })
 
 export const metadata: Metadata = {
   title: "MUTE MOOD",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sen.className}>
+      <body className={`${sen.variable} ${sriracha.variable} ${chakraPetch.variable} ${sarabun.variable} ${niramit.variable} ${anuphan.variable}`}>
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>

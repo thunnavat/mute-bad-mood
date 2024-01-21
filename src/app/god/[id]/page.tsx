@@ -1,25 +1,23 @@
+'use client'
 import ButtonBack from "@/app/components/ButtonBack"
 import ButtonLink from "@/app/components/ButtonLink"  
 import Image from "next/image"
-import { promises as fs } from "fs"
 import SlideTransition from "@/app/components/SlideTransition"
 
-const GodDetail = async ({ params }: { params: { id: string } }) => {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8")
-  const data = JSON.parse(file)
+const GodDetail = ({ params }: { params: { id: string } }) => {
   let god_title: string = ""
   let img: string = ""
   let url: string = ""
   if (params.id === "location1") {
-    god_title = data.god[0]
+    god_title = "เทพเจ้ากวนอู"
     img = "/god-1.png"
     url = "location1"
   } else if (params.id === "location2") {
-    god_title = data.god[1]
+    god_title = "ปีนเถ้ากง"
     img = "/god-2.png"
     url = "location2"
   } else if (params.id === "location3") {
-    god_title = data.god[2]
+    god_title = "เจ้าแม่ทับทิม"
     img = "/god-3.png"
     url = "location3"
   }
