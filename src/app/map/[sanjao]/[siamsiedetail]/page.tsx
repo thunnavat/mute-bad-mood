@@ -5,8 +5,6 @@ import Image from "next/image"
 import {
   FacebookShareButton,
   FacebookIcon,
-  VKShareButton,
-  VKIcon,
   TwitterShareButton,
   TwitterIcon,
   LineShareButton,
@@ -66,15 +64,6 @@ const SiamSieDetail = ({
             round
           />
         </FacebookShareButton>
-        <LineShareButton
-          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          title={"MUTE MOOD Website for making wishes"}
-        >
-          <LineIcon
-            size={iconsize}
-            round
-          />
-        </LineShareButton>
         <TwitterShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`}
           title={"MUTE MOOD Website for making wishes"}
@@ -84,6 +73,15 @@ const SiamSieDetail = ({
             round
           />
         </TwitterShareButton>
+        <LineShareButton
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
+          title={"MUTE MOOD Website for making wishes"}
+        >
+          <LineIcon
+            size={iconsize}
+            round
+          />
+        </LineShareButton>
         <WhatsappShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`}
           title={"MUTE MOOD Website for making wishes"}
@@ -93,15 +91,6 @@ const SiamSieDetail = ({
             round
           />
         </WhatsappShareButton>
-        <VKShareButton
-          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
-          title={"MUTE MOOD Website for making wishes"}
-        >
-          <VKIcon
-            size={iconsize}
-            round
-          />
-        </VKShareButton>
       </div>
       <ButtonDownload
         cardNumber={params.siamsiedetail}

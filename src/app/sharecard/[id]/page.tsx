@@ -2,27 +2,31 @@ import ButtonLink from "@/app/components/ButtonLink"
 import Image from "next/image"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://mute-bad-mood.vercel.app/'),
-  openGraph: {
-    title: "MUTE MOOD",
-    description: "Website for making wishes",
-    images: [
-      {
-        url: "/MetaImage_2.png",
-        width: 1200,
-        height: 630,
-        alt: "MUTE MOOD"
-      }
-    ]
-  }
-}
-
-const ShareCard = ({
+export const generateMetadata = ({
   params
 }: {
   params: { id: number }
-}) => {
+}): Metadata => {
+  return {
+    title: `MUTE MOOD | No.${params.id}`,
+    description: "Website for making wishes",
+    metadataBase: new URL("https://mute-bad-mood.vercel.app/"),
+    openGraph: {
+      title: `MUTE MOOD | No.${params.id}`,
+      description: "Website for making wishes",
+      images: [
+        {
+          url: `/card/sharecard/${params.id}.png`,
+          width: 1200,
+          height: 630,
+          alt: `MUTE MOOD | No.${params.id}`
+        }
+      ]
+    }
+  }
+}
+
+const ShareCard = ({ params }: { params: { id: number } }) => {
   const carddetail: string[] = [
     "ดวงของคุณช่วงนี้กำลังจะมา เป็นโอกาสที่ดีในการริเริ่มการงานใหม่ มีเงินไว้ใช้ไว้กินสบายๆ",
     "มีโชคเข้าหาจากบุคคลใกล้ตัว หากก่อนหน้าลงทุนอะไรไว้ ก็จะได้รับผลตอบแทน",
@@ -60,7 +64,7 @@ const ShareCard = ({
       <ButtonLink
         text="play"
         href="/"
-        className="mt-16 bottom-0"
+        className="bottom-0 mt-16"
       />
     </main>
   )

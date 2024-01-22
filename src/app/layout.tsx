@@ -38,6 +38,8 @@ const anuphan = Anuphan({
 })
 
 export const metadata: Metadata = {
+  title: "MUTE MOOD",
+  description: "Website for making wishes",
   metadataBase: new URL('https://mute-bad-mood.vercel.app/'),
   openGraph: {
     title: "MUTE MOOD",
