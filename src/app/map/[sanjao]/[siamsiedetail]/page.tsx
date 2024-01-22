@@ -1,6 +1,7 @@
 "use client"
 import ButtonLink from "@/app/components/ButtonLink"
 import ButtonDownload from "@/app/components/ButtonDownload"
+import ButtonCopyClipboard from "@/app/components/ButtonCopyClipboard"
 import Image from "next/image"
 import {
   FacebookShareButton,
@@ -34,8 +35,9 @@ const SiamSieDetail = ({
   ]
   const iconsize: number = 48
   const baseURL: string = "https://mute-bad-mood.vercel.app/"
+
   return (
-    <main className="max-w-screen bg-custom-400 flex h-auto min-h-screen flex-col items-center justify-center">
+    <main className="max-w-screen flex h-auto min-h-screen flex-col items-center justify-center bg-custom-400">
       <div className="mx-5 mt-5 flex h-auto w-[300px] flex-col items-center justify-center rounded-3xl bg-white p-2 shadow-2xl">
         <div>
           <Image
@@ -55,7 +57,7 @@ const SiamSieDetail = ({
       </div>
       <div className="mt-5 flex flex-row space-x-2">
         <FacebookShareButton
-          url={`${baseURL}/sharecard/${params.siamsiedetail}`}
+          url={`${baseURL}/sharecard/${params.siamsiedetail}`} 
           quote={"MUTE MOOD Website for making wishes"}
           hashtag={"#mutemood"}
         >
@@ -92,10 +94,16 @@ const SiamSieDetail = ({
           />
         </WhatsappShareButton>
       </div>
-      <ButtonDownload
-        cardNumber={params.siamsiedetail}
-        className="mt-5"
-      />
+      <div className=" mt-5 flex flew-row space-x-4">
+        <ButtonCopyClipboard
+          cardNumber={params.siamsiedetail}
+          className=""
+        />
+        <ButtonDownload
+          cardNumber={params.siamsiedetail}
+          className=""
+        />
+      </div>
       <ButtonLink
         text="play again"
         href="/map"
