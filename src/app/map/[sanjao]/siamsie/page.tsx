@@ -96,17 +96,6 @@ const SiamSie = ({ params }: { params: { sanjao: string } }) => {
     cloud2.style.animation = "upToDown 2s infinite"
   }
 
-  // const textAnimation = () => {
-  //   const wish = document.getElementById("wish") as HTMLElement
-  //   let size = 0
-  //   const fonstSize = setInterval(() => {
-  //     wish.style.fontSize = (size += 1) + "px"
-  //     if (size === 20) {
-  //       clearInterval(fonstSize)
-  //     }
-  //   }, 100)
-  // }
-
   return (
     <main className="flex h-screen w-screen flex-col bg-custom-400">
       <ButtonBack
