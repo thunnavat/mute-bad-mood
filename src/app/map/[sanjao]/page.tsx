@@ -63,7 +63,7 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
               priority
             />
           </div>
-          <div className="relative flex items-center justify-center rounded-[50px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
+          <div className="flex items-center justify-center rounded-[50px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
             <div>
               <h1 className="pt-2 text-center font-anuphan text-2xl font-semibold capitalize tracking-normal">
                 {location}
@@ -72,7 +72,7 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
                 {god}
               </h1>
             </div>
-            <div className="max-ip:ml-1 ip:absolute right-3 ">
+            <div className="ml-4 max-ip:ml-2">
               <Image
                 id="maps"
                 src="/maps.svg"
@@ -81,7 +81,7 @@ const Sanjao = ({ params }: { params: { sanjao: string } }) => {
                 height="0"
                 sizes="100vw"
                 priority
-                className="h-auto w-[45px]"
+                className="h-auto w-[35px] max-ip:w-[35px] cursor-pointer"
                 onClick={showModal}
               />
               <Modal

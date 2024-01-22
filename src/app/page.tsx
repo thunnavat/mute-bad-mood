@@ -70,7 +70,7 @@ const Home = () => {
           height="0"
           sizes="100vw"
           priority
-          className="h-full w-[500px] max-w-[1536px]"
+          className="h-full w-[500px] max-w-[1536px] max-ip:w-[450px]"
         />
       )
     }
@@ -79,7 +79,7 @@ const Home = () => {
 
   return (
     <main className="h-full w-full bg-gradient-to-t from-[#f3e4c8] from-50% to-white">
-      <div className="flex min-h-screen items-center justify-center sm:flex-col">
+      <div className="flex min-h-screen flex-col items-center justify-center">
         <div
           id="animation1"
           className="fixed top-6 sm:hidden"
@@ -94,7 +94,7 @@ const Home = () => {
           height="0"
           sizes="100vw"
           priority
-          className="fixed z-10 h-auto w-[0px] sm:static"
+          className="z-10 h-auto w-[0px]"
         />
         <Image
           id="cloud1"
@@ -129,7 +129,7 @@ const Home = () => {
         <ButtonLink
           text="start"
           href="/passport"
-          className="fixed bottom-10 sm:static"
+          className="fixed bottom-0 sm:static"
         />
       </div>
     </main>
