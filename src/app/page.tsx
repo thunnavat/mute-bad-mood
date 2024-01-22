@@ -129,7 +129,7 @@ const Home = () => {
         <ButtonLink
           text="start"
           href="/passport"
-          className="fixed bottom-0 sm:static"
+          className="absolute bottom-0 sm:static"
         />
       </div>
     </main>

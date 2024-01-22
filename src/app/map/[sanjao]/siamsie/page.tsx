@@ -97,58 +97,60 @@ const SiamSie = ({ params }: { params: { sanjao: string } }) => {
   }
 
   return (
-    <main className="flex h-screen w-screen flex-col bg-custom-400">
+    <main className="flex h-screen w-screen flex-col bg-custom-400 overflow-y-hidden">
       <ButtonBack
         href={`/map/${params.sanjao}`}
         secondary={true}
       />
-      <div className="grid grid-cols-1">
-        <Image
-          id="cloud1"
-          src="/Cloud.png"
-          alt="Cloud1"
-          width="0"
-          height="0"
-          sizes="100vw"
-          priority
-          className="-mb-7 h-auto w-[120px] ip:w-[180px] sm:hidden"
-        />
-        <Title
-          id="wish"
-          className="!mb-0 flex justify-center !font-anuphan !text-xl !font-normal"
+      <div className="relative h-screen">
+        <div className="grid grid-cols-1">
+          <Image
+            id="cloud1"
+            src="/Cloud.png"
+            alt="Cloud1"
+            width="0"
+            height="0"
+            sizes="100vw"
+            priority
+            className="-mb-7 h-auto w-[120px] ip:w-[180px] sm:hidden"
+          />
+          <Title
+            id="wish"
+            className="!mb-0 flex justify-center !font-anuphan !text-xl !font-normal"
+          >
+            โปรดตั้งจิตอธิษฐาน
+          </Title>
+          <Image
+            id="cloud2"
+            src="/Cloud2.png"
+            alt="Cloud2"
+            width="0"
+            height="0"
+            sizes="100vw"
+            priority
+            className="-mt-7 h-auto w-[120px] justify-self-end ip:w-[180px] sm:hidden"
+          />
+        </div>
+        <div
+          id="animation1"
+          className={`absolute -bottom-20 flex w-full justify-center ${
+            isOpened ? "hidden" : ""
+          }`}
+          onClick={() => {
+            setIsOpened(!isOpened)
+            clearInterval(interval)
+          }}
         >
-          โปรดตั้งจิตอธิษฐาน
-        </Title>
-        <Image
-          id="cloud2"
-          src="/Cloud2.png"
-          alt="Cloud2"
-          width="0"
-          height="0"
-          sizes="100vw"
-          priority
-          className="-mt-7 h-auto w-[120px] justify-self-end ip:w-[180px] sm:hidden"
-        />
-      </div>
-      <div
-        id="animation1"
-        className={`fixed -bottom-20 flex w-full justify-center ${
-          isOpened ? "hidden" : ""
-        }`}
-        onClick={() => {
-          setIsOpened(!isOpened)
-          clearInterval(interval)
-        }}
-      >
-        {renderSiamSie()}
-      </div>
-      <div
-        id="animation2"
-        className={`fixed -bottom-20 flex w-full justify-center ${
-          isOpened ? "" : "hidden"
-        }`}
-      >
-        {renderSiamSieOpen()}
+          {renderSiamSie()}
+        </div>
+        <div
+          id="animation2"
+          className={`absolute -bottom-20 flex w-full justify-center ${
+            isOpened ? "" : "hidden"
+          }`}
+        >
+          {renderSiamSieOpen()}
+        </div>
       </div>
     </main>
   )
