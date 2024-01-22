@@ -10,7 +10,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
         <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
         <p className="mx-5 mt-3 text-justify font-anuphan text-base font-extralight tracking-wide indent-6">
-          “ศาลเจ้าเล่าปุนเถ้ากง” ศาลเจ้าที่มีประวัติความเป็นมากว่าศตวรรษ
+          “ศาลเจ้าพ่อต้นไทร” ศาลเจ้าที่มีประวัติความเป็นมากว่าศตวรรษ
           เป็นศูนย์รวมความศรัทธาของชาวจีนมาตั้งแต่ยุคต้นกรุงรัตนโกสินทร์
           ชาวจีนอพยพจึงได้ตั้งศาลเจ้าเพื่อเป็นที่เคารพบูชา
           และเป็นที่ยึดเหนี่ยวทางจิตใจ
