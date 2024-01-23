@@ -9,7 +9,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
         <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
-        <p className="mx-5 mt-3 text-left indent-6 font-anuphan text-base font-extralight tracking-wide">
+        <p className="mx-5 mt-3 text-center font-anuphan text-base font-extralight tracking-wide">
           “ศาลเจ้าพ่อต้นไทร” ศาลเจ้าที่มีประวัติความเป็นมากว่าศตวรรษ
           เป็นศูนย์รวมความศรัทธาของชาวจีนมาตั้งแต่ยุคต้นกรุงรัตนโกสินทร์
           ชาวจีนอพยพจึงได้ตั้งศาลเจ้าเพื่อเป็นที่เคารพบูชา
@@ -17,7 +17,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
           เพื่อขอให้อำนาจสิ่งศักดิ์สิทธิ์ปกป้องคุ้มครองในการดำเนินชีวิตประจำวัน
           และทำกิจการค้าขายโดยเฉพาะชาวจีนแต้จิ๋ว
         </p>
-        <p className="mx-5 mb-8 mt-3 text-left indent-6 font-anuphan text-base font-extralight tracking-wide">
+        <p className="mx-5 mb-8 mt-3 text-center font-anuphan text-base font-extralight tracking-wide">
           นอกจากนี้ ในอดีตการเดินทางออกจากแผ่นดินจีนเป็นไปด้วยความยากลำบาก
           ต้องล่องเรือฝ่าคลื่นลมรอนแรมมาเป็นแรมเดือน ดังนั้นการนับถือเทพเจ้า
           เพราะเชื่อว่าเทพเจ้าจะช่วยคุ้มครอง และช่วยเหลือ
@@ -34,13 +34,13 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
         <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
-        <p className="mx-5 mt-3 text-left indent-6 font-anuphan text-base font-extralight tracking-wide">
+        <p className="mx-5 mt-3 text-center font-anuphan text-base font-extralight tracking-wide">
           ประวัติเล่าว่า ในสมัยก่อนเจ้าพ่อเป็นนักรบ
           ทำความดีไว้มากมายได้อัญเชิญมาจากประเทศจีนให้คนที่ทำธุรกิจการค้ามาไหว้ขอพรจะได้มีผลการค้าเจริญรุ่งเรืองเล่าขานกันต่อ
           ๆ มาว่าในช่วงสงครามโลกครั้งที่ 2
           ขณะที่เครื่องบินกำลังทิ้งระเบิดในบริเวณบ้านหม้อเจ้าพ่อได้ปัดระเบิดไปลงที่สะพานพุทธทำให้ผู้คนในบริเวณดังกล่าวต่างนับถือและกราบไหว้ตลอดมาจนถึงปัจจุบัน
         </p>
-        <p className="mx-5 mb-8 mt-3 text-left indent-6 font-anuphan text-base font-extralight tracking-wide">
+        <p className="mx-5 mb-8 mt-3 text-center font-anuphan text-base font-extralight tracking-wide">
           ศาลเจ้าบ้านหม้อ เดิมเป็นเพียงศาลพระภูมิเล็กๆ มีมานานกว่า 100 ปี แล้ว
           เป็นที่นับถือของชาวจีน เชื่อกันว่ามีความศักดิ์สิทธิ์ในทุก ๆ ด้าน ผู้ใด
           ให้ความเคารพนับถือกราบไหว้อธิษฐานประสงค์สิ่งใด ก็มักจะสมปรารถนา
@@ -52,7 +52,7 @@ const Textparagraph = ({ name }: ITextparagraphProps) => {
     return (
       <div className="mt-5 flex flex-col items-center justify-center rounded-[40px] border-[5px] border-solid border-black bg-white shadow-[5px_3px_0px_#000000] max-sm:w-10/12 max-sm:max-w-md sm:w-10/12 sm:max-w-xl">
         <h2 className="pt-3 font-anuphan text-xl font-semibold">ประวัติ</h2>
-        <p className="mx-5 mb-8 mt-3 text-left indent-6 font-anuphan text-base font-extralight tracking-wide">
+        <p className="mx-5 mb-8 mt-3 text-center font-anuphan text-base font-extralight tracking-wide">
           ศาลเจ้าแม่ทับทิม ซึ่งชาวจีนเชื่อว่าเป็นเทพเจ้าแห่งท้องน้ำ
           ที่ชาวเรือจีนจากแดนไกลเคารพบูชามาตั้งแต่บรรพบุรุษ
           ด้วยเชื่อว่าจะเสริมความร่ำรวย รุ่งโรจน์สำหรับคนที่มาขอพรกับท่าน
