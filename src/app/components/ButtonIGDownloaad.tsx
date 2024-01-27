@@ -3,42 +3,42 @@ import React from "react"
 import { saveAs } from "file-saver"
 import Image from "next/image"
 
-interface IButtonDownloadProps {
+interface IButtonIGDownloadProps {
   cardNumber: number
   className?: string
   disabled?: boolean
 }
 
-const ButtonDownload = ({
+const ButtonIGDownload = ({
   cardNumber,
   disabled,
   className
-}: IButtonDownloadProps) => {
+}: IButtonIGDownloadProps) => {
   const downloadImg = () => {
-    saveAs(`/card/download/${cardNumber}.png`, `Mutemood_Card.png`)
+    saveAs(`/card/IG/${cardNumber}.png`, `Card_IG_Story.png`)
   }
   return (
     <div className={`flex items-center justify-center ${className}`}>
       <div className="relative flex items-start justify-end">
-        {/* <span className="absolute flex h-[14px] w-[14px]">
+        <span className="absolute flex h-[14px] w-[14px]">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D83A40] opacity-75"></span>
           <span className="relative inline-flex h-[14px] w-[14px] rounded-full bg-[#D83A40]"></span>
-        </span> */}
+        </span>
         <button
           className="rounded-full bg-white shadow-md hover:bg-opacity-85 active:bg-gray-300 disabled:opacity-0"
           disabled={disabled}
           onClick={downloadImg}
         >
-          <div className="flex flex-row p-4 ">
+          <div className="flex flex-row p-4">
             <Image
-              src="/download.svg"
-              alt="download"
+              src="/instagram_color.svg"
+              alt="instagram"
               width={20}
               height={20}
             />
-            {/* <p className="p-1 font-sans text-sm font-bold capitalize text-white">
-              Download bg-[#D83A40]
-            </p> */}
+            <p className="ml-2 font-anuphan text-center text-md font-semibold capitalize text-[#1f2937]">
+              For IG Story
+            </p>
           </div>
         </button>
       </div>
@@ -46,4 +46,4 @@ const ButtonDownload = ({
   )
 }
 
-export default ButtonDownload
+export default ButtonIGDownload

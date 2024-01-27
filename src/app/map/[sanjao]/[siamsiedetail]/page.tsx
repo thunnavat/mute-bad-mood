@@ -13,6 +13,7 @@ import {
   WhatsappShareButton,
   WhatsappIcon
 } from "next-share"
+import ButtonIGDownload from "@/app/components/ButtonIGDownloaad"
 
 const SiamSieDetail = ({
   params
@@ -100,6 +101,10 @@ const SiamSieDetail = ({
           className=""
         />
         <ButtonDownload
+          cardNumber={params.siamsiedetail}
+          className=""
+        />
+        <ButtonIGDownload
           cardNumber={params.siamsiedetail}
           className=""
         />
