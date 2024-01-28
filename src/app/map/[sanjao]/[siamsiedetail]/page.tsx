@@ -50,13 +50,17 @@ const SiamSieDetail = ({
             className="h-auto"
           />
         </div>
-        <div className="mx-5 mb-2 flex text-center ">
+        <div className="mx-5 mb-2 block text-center ">
           <p className="font-anuphan text-xs font-medium">
             {carddetail[params.siamsiedetail - 1]}
           </p>
+          {/* <p className="font-anuphan text-xs font-semibold mt-2">
+            #BangkokDesignWeek2024 <br /> #PhranakornSpritUp
+          </p> */}
         </div>
       </div>
-      <div className="mt-5 flex flex-row space-x-2">
+      <h2 className="mt-5 font-anuphan text-sm font-semibold text-center text-gray-900">#BangkokDesignWeek2024 <br /> #PhranakornSpritUp</h2>
+      <div className="mt-3 flex flex-row space-x-2">
         <FacebookShareButton
           url={`${baseURL}/sharecard/${params.siamsiedetail}`} 
           quote={"MUTE MOOD Website for making wishes"}
